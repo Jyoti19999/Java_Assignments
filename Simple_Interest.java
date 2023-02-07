@@ -13,9 +13,7 @@ System.out.println(" The entered rate of interest is "+r);
 System.out.println("Enter the no.of years for calculate SI:");
 n=sc.nextInt();
 System.out.println("The entered no. of years for SI "+n);
-
 int d=((p*r*n)/100); // formula to calculate SI
 System.out.println("As per the entered values simple interest(SI) is: "+d);
 }
-
 }
