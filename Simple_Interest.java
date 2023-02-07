@@ -1,10 +1,8 @@
 import java.util.*;
 class Simple_Interest
 {
-  public static void main(String args[]){
-
+public static void main(String args[]){
 int p,r,n;
-
 Scanner sc = new Scanner(System.in);//Taking i/p from cammand line.
 System.out.println("Enter the principle amount to calculate simple interest:");
 p=sc.nextInt(); // The method will take integer input.
