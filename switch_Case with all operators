@@ -1,0 +1,64 @@
+package pack;
+
+import java.util.Scanner;
+
+public class Switch_Program {
+
+	public static void main(String[] args) {
+		System.out.println("Enter 1 for arithmatic operation");
+		System.out.println("Enter 2 for assignment operation");
+		System.out.println("Enter 3 for logical operations");
+		System.out.println("Enter 4 for bitwise operations");
+		System.out.println("Enter 5 for relational operations");
+		System.out.println("Enter 6 for unary operations");
+		Scanner sc=new Scanner(System.in);
+		int choice=sc.nextInt();
+		System.out.println("Enter number1");
+	    System.out.println("Enter number2");
+	    int number1=sc.nextInt();
+	    int number2=sc.nextInt();
+	    
+	    switch(choice)
+		{
+		case 1: 
+		        System.out.println("Addition of numbe1 & number2 is: "+(number1+number2));
+		        System.out.println("Substraction of numbe1 & number2  is: "+(number1-number2));
+		        System.out.println("Multiplication of numbe1 & number2 is: "+(number1*number2));
+		        System.out.println("Division  of numbe1 & number2 is: "+(number1/number2));
+		        System.out.println("Modulus of numbe1 & number2 is: "+(number1%number2));
+		        break;
+		case 2:System.out.println("Assignment==: "+(number1==number2));
+		       System.out.println("Assignment+=: " +(number1+=number2));
+		       System.out.println("Assignment-=: " +(number1-=number2));
+		       System.out.println("Assignment*=: "+(number1*=number2));
+		       System.out.println("Assignment/=: "+(number1/=number2));
+		       System.out.println("Assignment%=: "+(number1%=number2));
+		       break;
+		case 3:System.out.println("Enter number3");
+		       int number3=sc.nextInt();
+			   System.out.println(" Logical AND: "+(number1>number2 &&number1>number3));
+		       System.out.println(" Logical OR : "+(number1>number2 ||number1>number3));
+		       System.out.println("Logical NOT: "+(!(number1>number2)));
+		       break;
+		case 4:System.out.println(Integer.toBinaryString(number1));
+		       System.out.println(Integer.toBinaryString(number2));
+		 	   System.out.println("Bitwise AND result: "+(number1 & number2));
+		       System.out.println("Bitwise OR result: "+(number1 | number2));
+		       System.out.println("Bitwise result: "+(number1 & number2));
+		       break;
+		case 5:System.out.println("Relational==: "+(number1 == number2)); 
+		       System.out.println("Relational>=: "+(number1>= number2));
+		       System.out.println("Relational<=: "+(number1 <= number2));
+		       System.out.println("Relational!=: "+(number1 != number2));
+		       break;
+	    case 6:System.out.println(" Preincrement of number 1 : "+(++number1));
+		        System.out.println("Post increment of number1:"+(number1++));
+		        System.out.println("Post decrement of number2:"+(number2--));
+		        System.out.println("Predecrement of number2:"+(--number2));
+		        break;
+		       
+		}
+
+	}
+
+}
